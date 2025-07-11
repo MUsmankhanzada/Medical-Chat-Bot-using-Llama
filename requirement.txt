@@ -3,3 +3,4 @@ sentence-transformers
 flask
 langchain 
 chromadb 
+langchain-community
