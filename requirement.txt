@@ -2,5 +2,8 @@ ctransformers
 sentence-transformers 
 flask
 langchain 
-chromadb 
+pinecone-client 
 langchain-community
+pypdf
+python-dotenv
+llama-cpp-python --extra-index-url https://jllllll.github.io/llama-cpp-python-cuBLAS-wheels/AVX2/cpu
