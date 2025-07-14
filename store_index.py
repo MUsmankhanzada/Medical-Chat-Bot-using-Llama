@@ -9,7 +9,7 @@ load_dotenv()
 
 PINECONE_API_KEY = os.environ.get('PINECONE_API_KEY')
 
-print(PINECONE_API_KEY)
+# print(PINECONE_API_KEY)
 
 extracted_text = load_pdf("D:\Medical-Chat-Bot-using-Llama\data")
 text_chunks = text_splitter(extracted_text)
