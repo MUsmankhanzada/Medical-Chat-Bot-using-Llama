@@ -1,4 +1,4 @@
-from src.helper import load_pdf, text_splitter, download_huggingface_embedings
+from src.helper import load_pdf, text_splitter, download_huggingface_embeddings
 from langchain.vectorstores import Pinecone
 import pinecone
 from dotenv import load_dotenv
@@ -14,7 +14,7 @@ PINECONE_API_KEY = os.environ.get('PINECONE_API_KEY')
 extracted_text = load_pdf("D:\Medical-Chat-Bot-using-Llama\data")
 text_chunks = text_splitter(extracted_text)
 
-embeddings = download_huggingface_embedings()
+embeddings = download_huggingface_embeddings()
 
 pc = Pinecone(api_key=PINECONE_API_KEY)
 index = pc.Index("medical-bot")

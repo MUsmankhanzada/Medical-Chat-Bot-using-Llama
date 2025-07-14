@@ -16,7 +16,7 @@ def text_splitter(extracted_text):
     text_split = RecursiveCharacterTextSplitter(chunk_size=700, chunk_overlap=50)
     return text_split.split_documents(extracted_text)
 
-def download_huggingface_embedings():
+def download_huggingface_embeddings():
     embeddings = HuggingFaceEmbeddings(
         model_name="sentence-transformers/all-MiniLM-L6-v2")
     return embeddings
